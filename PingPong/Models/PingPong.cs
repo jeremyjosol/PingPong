@@ -4,13 +4,14 @@ namespace PingPongCs.Models
 {
   public class PingPong
   {
-    public PingPong()
+    public static string[] PingPongGenerator(int inputNumber)
     {
-
+      string[] initializeGenerator = new string[inputNumber]; 
+      return initializeGenerator;
     }
-    public static bool CheckDivisibility(int divisibleBy3, int divisibleBy5)
+    public static bool CheckDivisibility(int divisibleBy)
     {
-      if (divisibleBy3 % 3 == 0 || divisibleBy5 % 5 == 0)
+      if (divisibleBy % 3 == 0 || divisibleBy % 5 == 0)
       {
         return true;
       }

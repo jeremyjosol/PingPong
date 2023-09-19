@@ -20,7 +20,7 @@ namespace PingPongCs.Tests
     public void CheckDivisibility_IfDivisibleBy3_ReturnTrue()
     {
       int divisibleBy3 = 12;
-      bool result = PingPong.CheckDivisibility(divisibleBy3, 20);
+      bool result = PingPong.CheckDivisibility(divisibleBy3);
       Assert.IsTrue(result);
     }
 
@@ -28,8 +28,16 @@ namespace PingPongCs.Tests
     public void CheckDivisibility_IfDivisibleBy5_ReturnTrue()
     {
       int divisibleBy5 = 25;
-      bool result = PingPong.CheckDivisibility(9, divisibleBy5);
+      bool result = PingPong.CheckDivisibility(divisibleBy5);
       Assert.IsTrue(result);
+    }
+
+    [TestMethod]
+    public void PingPongGenerator_InitializesEmptyArray_EmptyArray()
+    {
+      int inputNumber = 0;
+      string[] result = PingPong.PingPongGenerator(inputNumber);
+      Assert.AreEqual(0, result.Length);
     }
   }
 }
