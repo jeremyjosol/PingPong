@@ -13,6 +13,14 @@ namespace PingPongCs.Models
         {
           initializeGenerator[i - 1] = "pingpong";
         }
+        else if (i % 3 == 0)
+        {
+          initializeGenerator[i - 1] = "ping";
+        }
+        else if (i % 5 == 0)
+        {
+          initializeGenerator[i - 1] = "pong";
+        }
         else
         {
           initializeGenerator[i - 1] = i.ToString();
