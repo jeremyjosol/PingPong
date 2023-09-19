@@ -39,5 +39,13 @@ namespace PingPongCs.Tests
       string[] result = PingPong.PingPongGenerator(inputNumber);
       Assert.AreEqual(0, result.Length);
     }
+
+    [TestMethod]
+    public void PingPongGenerator_TakesUserInput_String()
+    {
+      int inputNumber = 15;
+      string[] result = PingPong.PingPongGenerator(inputNumber);
+      Assert.AreEqual("pingpong", result[14]);
+    }
   }
 }
