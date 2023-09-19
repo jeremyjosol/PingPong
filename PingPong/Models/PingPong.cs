@@ -8,5 +8,16 @@ namespace PingPongCs.Models
     {
 
     }
+    public static bool CheckDivisibility(int divisibleBy3)
+    {
+      if (divisibleBy3 % 3 == 0)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+    }
   }
 }
