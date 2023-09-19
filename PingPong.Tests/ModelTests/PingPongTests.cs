@@ -19,9 +19,15 @@ namespace PingPongCs.Tests
     [TestMethod]
     public void CheckDivisibility_IfDivisibleBy3_ReturnTrue()
     {
-      int divisbleBy3 = 12;
-      bool result = PingPong.CheckDivisibility(divisbleBy3);
+      int divisibleBy3 = 12;
+      bool result = PingPong.CheckDivisibility(divisibleBy3);
       Assert.IsTrue(result);
+    }
+
+    [TestMethod]
+    public void CheckDivisibility_IfDivisibleBy5_ReturnTrue()
+    {
+
     }
   }
 }
